@@ -1,0 +1,353 @@
+/*Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    max-width: 100vw;
+}
+
+/* Fuentes generales */
+
+* {
+    color: white;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.size8 {
+    font-size: 8px;
+}
+
+.size9 {
+    font-size: 9px;
+}
+
+.size10 {
+    font-size: 10px;
+}
+
+.size12 {
+    font-size: 12px;
+}
+
+.size13 {
+    font-size: 13px;
+}
+
+.size16 {
+    font-size: 16px;
+}
+
+.size24 {
+    font-size: 24px;
+}
+
+.size26 {
+    font-size: 26px;
+}
+
+.size28 {
+    font-size: 28px;
+}
+
+p {
+    font-weight: 400;
+}
+
+.weight400 {
+    font-weight: 400;
+}
+
+.weight500 {
+    font-weight: 500;
+}
+
+.weight700 {
+    font-weight: 700;
+}
+
+.weight800 {
+    font-weight: 800;
+}
+
+/*Backgrounds*/
+
+.fondoNegro {
+    background-color: black;
+}
+
+.fondoBlanco {
+    background-color: #FFFDFD;
+}
+
+.fondoGris {
+    background-color: #575756;
+}
+
+/*Color del texto que no es blanco*/
+
+.textoNegro {
+    color: black;
+}
+
+.textoGrisOscuro {
+    color: #3D3845;
+}
+
+.textoGrisIntermedio {
+    color: #575756;
+}
+
+.textoGrisClaro {
+    color: #3D3544;
+}
+
+.textoGrisMasClaro {
+    color: #9E9BA1;
+}
+
+.textoNaranja {
+    color: #C39A6D;
+}
+
+/* imágenes generales */
+
+.fotos {
+    max-width: 100vw;
+}
+
+/* header */
+
+header {
+    width: 100vw;
+    padding: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#imagenLogo {
+    width: 103px;
+}
+
+#clickeablesHeader {
+    display: flex;
+}
+
+#menuRedesHeader {
+    display: flex;
+}
+
+.itemsRedesHeader {
+    margin: 0 2px;
+}
+
+#botonMenu {
+    margin-left: 19px;
+}
+
+/* títulos */
+
+section#instagramPosts {
+    text-align: center;
+}
+
+/* sección 1 MOBILIARIOS COCINA */
+
+#seccionMobiliarios{
+    position: relative;
+}
+
+#fotoMobiliarios {
+    position: relative;
+    padding-right: 30%;
+}
+
+#textoMobiliarios {
+    z-index: 1;
+    width: 44%;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 56px;
+    min-width: 150px;
+}
+
+#renderizamos {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+/* sección 2 INSTAGRAM POSTS */
+
+#seccionPosts {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+h2#newPosts {
+    font-size: 42px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* sección 3 VESTIDORES y COMENTARIOS */
+
+#textoVestidores {
+    z-index: 1;
+    margin-left: 11%;
+    margin-right: 11%;
+    padding: 9px 25px 25px;
+    min-width: 230px;
+    position: relative;
+    top: -45px;
+}
+
+#aMedida {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#fotoComentarios {
+    position: relative;
+    top: -73px;
+}
+
+#textoComentarios {
+    margin: 0 11%;
+    padding: 18px 25px 25px;
+    min-width: 230px;
+    position: relative;
+    top: -77px;
+}
+
+#tuExperiencia {
+    padding: 12px 0;
+}
+
+/* sección 4 VIDEO HERRAJES */
+
+#seccionVideoHerrajes {
+    padding: 0 7.5%;
+    position: relative;
+    top: -30px;
+}
+
+/* sección 5 CONTACTO */
+
+#textoEscribinos {
+    z-index: 1;
+    width: 55%;
+    padding: 24px 20px 20px;
+    position: relative;
+    left: 0;
+    top: -346px;
+    min-width: 150px;
+}
+
+#hola {
+    line-height: 29px;
+    /*margin: 20px 0 10px;*/
+}
+
+#somosMaCuisine {
+    margin: 10px 0 0;
+}
+
+/* form */
+
+form {
+    text-align: center;
+    position: relative;
+    top: -150px;
+    margin: 23px 5% 12px;
+}
+
+#botonContacto {
+    background: #C39A6D;
+    width: 149px;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+input#formNombre {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #3D3845;
+}
+
+input#formEmail {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #3D3845;
+}
+
+#aclaracionesForm {
+    text-align: left;
+    padding: 15px 5%;
+    position: relative;
+    top: -100px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+}
+
+#formEmail,
+textarea {
+    margin-top: 23px;
+}
+
+textarea {
+    height: 126px;
+}
+
+/* footer */
+
+#seguinos {
+    text-align: right;
+}
+
+footer {
+    position: relative;
+    top: -100px;
+    padding: 5%;
+}
+
+/* estilos menú cerrado */
+
+.close {
+    display: none;
+}
+
+/******/
+
+/**
+ * estilos menú abierto
+ */
+body.burger-menu-active .open {
+    display: none;
+}
+
+body.burger-menu-active .close {
+    display: block;
+}
+
+/***/
+
+/* MEDIA QUERIES */
+
+@media (min-width: 480px) {
+    * {
+        display: none;
+    }
+}
