@@ -19,15 +19,15 @@
 }
 
 .size8 {
-    font-size: 8px;
+    font-size: 12px;
 }
 
 .size9 {
-    font-size: 9px;
+    font-size: 12px;
 }
 
 .size10 {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .size12 {
@@ -190,21 +190,25 @@ section#instagramPosts {
 }
 
 h2#newPosts {
-    font-size: 42px;
+    font-size: 34px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 /* sección 3 VESTIDORES y COMENTARIOS */
 
+#mobiliariosVestidores {
+    position: relative;
+}
+
 #textoVestidores {
-    z-index: 1;
+    position: absolute;
+    z-index: 1; 
     margin-left: 11%;
     margin-right: 11%;
     padding: 9px 25px 25px;
     min-width: 230px;
-    position: relative;
-    top: -45px;
+    top: 80%;
 }
 
 #aMedida {
@@ -214,7 +218,6 @@ h2#newPosts {
 
 #fotoComentarios {
     position: relative;
-    top: -73px;
 }
 
 #textoComentarios {
@@ -222,7 +225,6 @@ h2#newPosts {
     padding: 18px 25px 25px;
     min-width: 230px;
     position: relative;
-    top: -77px;
 }
 
 #tuExperiencia {
@@ -234,19 +236,22 @@ h2#newPosts {
 #seccionVideoHerrajes {
     padding: 0 7.5%;
     position: relative;
-    top: -30px;
 }
 
 /* sección 5 CONTACTO */
+
+#holaEscribinos {
+    position: relative;
+}
 
 #textoEscribinos {
     z-index: 1;
     width: 55%;
     padding: 24px 20px 20px;
-    position: relative;
+    position: absolute;
     left: 0;
-    top: -346px;
-    min-width: 150px;
+    top: 16%;
+    min-width: 194px;
 }
 
 #hola {
@@ -263,7 +268,6 @@ h2#newPosts {
 form {
     text-align: center;
     position: relative;
-    top: -150px;
     margin: 23px 5% 12px;
 }
 
@@ -293,7 +297,6 @@ input#formEmail {
     text-align: left;
     padding: 15px 5%;
     position: relative;
-    top: -100px;
 }
 
 input,
@@ -385,7 +388,18 @@ body.burger-menu-active .close {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 480px) {
+/* 1024 */
+
+@media (min-width: 768px) {
+    main {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
+
+/* 768 */
+
+@media (min-width: 1024px) {
     * {
         display: none;
     }
