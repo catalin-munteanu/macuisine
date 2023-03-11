@@ -120,6 +120,12 @@ p {
     max-width: 100vw;
 }
 
+/* propiedades generales */
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* header */
 
 header {
@@ -148,6 +154,14 @@ header {
 
 #botonMenu {
     margin-left: 19px;
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    display: flex;
 }
 
 /* títulos */
@@ -308,7 +322,6 @@ form {
     width: 149px;
     font-weight: 400;
     font-size: 20px;
-    margin-top: 15px;
 }
 
 input#formNombre {
@@ -325,10 +338,16 @@ input#formEmail {
     color: #3D3845;
 }
 
+#containerAclaracionesBoton {
+    padding: 23px 0;
+    display: flex;
+    flex-direction: column;
+}
+
 #aclaracionesForm {
     text-align: left;
-    padding: 15px 5%;
-    position: relative;
+    opacity: 0.65;
+    margin-top: 15px;
 }
 
 input,
@@ -423,6 +442,25 @@ body.burger-menu-active .close {
 
 @media (min-width: 768px) {
 
+    /* header */
+
+    #botonMenu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 8px;
+    }
+
+    nav {
+        padding: 0 20px;
+    }
+
     /* sección mobiliarios cocina */
 
     #fotoMobiliarios {
@@ -430,8 +468,8 @@ body.burger-menu-active .close {
     }
 
     #textoMobiliarios {
-        padding: 35px 35px 70px;
-        top: 190px;
+        padding: 24px 21px 55px;
+        top: 130px;
     }
 
     #textoMobiliarios h3 {
@@ -573,12 +611,37 @@ body.burger-menu-active .close {
 
 /* form */
 
-/*
+
 form {
-    text-align: center;
-    position: relative;
-    margin: 23px 5% 0;
+    margin: 0;
+    padding: 4% 8%;
 }
+
+#containerNombreEmail {
+    display: flex;
+}
+
+#formEmail {
+    margin-top: 0;
+    margin-left: 11.5px;
+}
+
+#formNombre {
+    margin-right: 11.5px;
+}
+
+#containerAclaracionesBoton {
+    height: auto;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#aclaracionesForm {
+    margin: 0;
+}
+
+/*
 
 #botonContacto {
     background: #C39A6D;
@@ -602,12 +665,6 @@ input#formEmail {
     color: #3D3845;
 }
 
-#aclaracionesForm {
-    text-align: left;
-    padding: 15px 5%;
-    position: relative;
-}
-
 input,
 textarea {
     width: 100%;
@@ -619,9 +676,55 @@ textarea {
     margin-top: 23px;
 }
 
+*/
+
 textarea {
-    height: 126px;
+    height: 176px;
 }
+
+/* footer */
+
+footer {
+    padding: 32px 58px 28px;
+}
+
+footer ul {
+    justify-content: flex-end;
+}
+
+footer ul li {
+    margin: 0 8px;
+}
+
+footer ul :nth-child(3) {
+    margin-right: 0;
+}
+
+/*
+
+#seguinos {
+    text-align: right;
+}
+
+#datosContactoFooter {
+    margin: 1em 0 27px;
+}
+
+#seguinos {
+    margin-bottom: 0.5em;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 32px 0 0;
+}
+
+.elementosListaFooter {
+    height: 60px;
+}
+
 */
 
 }
@@ -634,10 +737,31 @@ textarea {
         margin: 0 auto;
     }
 
-/* oculto menú hamburguesa */
+    /* sección mobiliarios cocina */
 
-#botonMenu {
-    display: none;
-}
+    #fotoMobiliarios {
+        padding-right: 32%;
+    }
+
+    #textoMobiliarios {
+        padding: 35px 35px 70px;
+        top: 190px;
+    }
+
+    #textoMobiliarios h3 {
+        font-size: 36px;
+    }
+
+    #textoMobiliarios h5 {
+        font-size: 16px;
+    }
+
+    #textoMobiliarios p {
+        font-size: 15px;
+    }
+
+    #renderizamos {
+        margin: 15px 0;
+    }
 
 }

@@ -35,6 +35,19 @@
                 <img class="close" src="img\mobile\icono-facebook.svg">
             </button>
 
+            <nav>
+                <ul>
+                    <li class="itemsNav"><a href="#seccionMobiliarios"
+                            class="textoGrisIntermedio weight700 size16">Cocinas</a></li>
+                    <li class="itemsNav"><a href="#mobiliariosVestidoresComentarios"
+                            class="textoGrisIntermedio weight700 size16">Vestidores</a></li>
+                    <li class="itemsNav"><a href="#containerComentarios"
+                            class="textoGrisIntermedio weight700 size16">Comentarios</a></li>
+                    <li class="itemsNav"><a href="#seccionContacto"
+                            class="textoGrisIntermedio weight700 size16">Contacto</a></li>
+                </ul>
+            </nav>
+
         </article>
 
     </header>
@@ -141,18 +154,20 @@
             </figure>
 
             <form class="fondoNegro">
-                <input type="text" name="nombre" id="formNombre" placeholder="Nombre" required>
-                <br>
-                <input type="email" name="email" id="formEmail" placeholder="email@gmail.com" required>
-                <br>
+                <article id="containerNombreEmail">
+                    <input type="text" name="nombre" id="formNombre" placeholder="Nombre" required>
+                    <br>
+                    <input type="email" name="email" id="formEmail" placeholder="email@gmail.com" required>
+                    <br>
+                </article>
                 <textarea name="mensaje" id="formMensaje" maxlength="3000" required></textarea>
-                <br>
-                <input type="submit" value="ENVIAR" id="botonContacto">
+                <article id="containerAclaracionesBoton">
+                    <input type="submit" value="ENVIAR" id="botonContacto">
+                    <p class="size12" id="aclaracionesForm">Dejanos tu consulta y nos comunicaremos con vos.<br>
+                        Si podés dejanos un número de contacto.<br>
+                        Gracias, MaCuisine.</p>
+                </article>
             </form>
-
-            <p class="size12" id="aclaracionesForm">Dejanos tu consulta y nos comunicaremos con vos.<br>
-                Si podés dejanos un número de contacto.<br>
-                Gracias, MaCuisine.</p>
 
         </section>
 
