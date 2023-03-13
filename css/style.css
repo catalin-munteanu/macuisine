@@ -444,6 +444,11 @@ body.burger-menu-active .close {
 
     /* header */
 
+    header {
+        padding: 34px;
+        margin-bottom: 47px;
+    }
+
     #botonMenu {
         display: none;
     }
@@ -458,7 +463,11 @@ body.burger-menu-active .close {
     }
 
     nav {
-        padding: 0 20px;
+        padding-left: 20px;
+    }
+    
+    #imagenLogo {
+        width: 115px;
     }
 
     /* sección mobiliarios cocina */
