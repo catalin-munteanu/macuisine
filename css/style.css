@@ -194,7 +194,7 @@ section#instagramPosts {
 }
 
 #renderizamos {
-    margin-top: 6px 0;
+    margin: 0.8em 0;
 }
 
 /* sección 2 INSTAGRAM POSTS */
@@ -263,6 +263,7 @@ h2#newPosts {
 #fotoComentarios {
     top: 110px;
     max-width: 100%;
+    margin-bottom: 30px;
 }
 
 #textoComentarios {
