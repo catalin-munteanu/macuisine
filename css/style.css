@@ -230,8 +230,15 @@ h2#newPosts {
 
 /* sección 3 VESTIDORES y COMENTARIOS */
 
+
 #mobiliariosVestidores {
     position: relative;
+}
+
+#fotoVestidores {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 120px;
 }
 
 #textoVestidores {
@@ -242,10 +249,6 @@ h2#newPosts {
     padding: 9px 25px 25px;
     min-width: 230px;
     top: 85%;
-}
-
-#fotoVestidores {
-    max-width: 100%;
 }
 
 #aMedida {
@@ -376,7 +379,7 @@ footer {
     text-align: right;
 }
 
-#datosContactoFooter {
+#listaDatosContacto {
     margin: 1em 0 27px;
 }
 
@@ -404,7 +407,7 @@ footer::before {
     right: 0;
 }
 
-footer ul {
+#listaIconosFooter {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -439,6 +442,24 @@ body.burger-menu-active .close {
 /* MEDIA QUERIES */
 
 /* 768 */
+
+@media (min-width: 390px) {
+    #fotoVestidores {
+        margin-bottom: 90px;
+    }
+}
+
+@media (min-width: 450px) {
+    #textoVestidores {
+        top: 90%;
+    }
+}
+
+@media (min-width: 520px) {
+    #textoVestidores {
+        top: 92%;
+    }
+}
 
 @media (min-width: 768px) {
 
@@ -581,7 +602,7 @@ body.burger-menu-active .close {
         font-size: 16px;
     }
 
-    /* sección 4 VIDEO HERRAJES */
+/* sección 4 VIDEO HERRAJES */
 
     #seccionVideoHerrajes {
         margin-top: 50px; 
@@ -607,15 +628,20 @@ body.burger-menu-active .close {
 
 #textoEscribinos {
     width: 42%;
+    padding: 30px 30px 30px 40px;
 }
 
 #textoEscribinos h2 {
     font-size: 32px;
 }
 
+#textoEscribinos h2 {
+    line-height: 1.2em;
+}
+
 #fotoContacto {
-    width: 78%;
-    right: 0;
+    padding-left: 31%;
+    display: block;
 }
 
 /* form */
@@ -650,43 +676,6 @@ form {
     margin: 0;
 }
 
-/*
-
-#botonContacto {
-    background: #C39A6D;
-    width: 149px;
-    font-weight: 400;
-    font-size: 20px;
-    margin-top: 15px;
-}
-
-input#formNombre {
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    color: #3D3845;
-}
-
-input#formEmail {
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    color: #3D3845;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 12px;
-}
-
-#formEmail,
-textarea {
-    margin-top: 23px;
-}
-
-*/
-
 textarea {
     height: 176px;
 }
@@ -694,19 +683,48 @@ textarea {
 /* footer */
 
 footer {
-    padding: 32px 58px 28px;
+    padding: 32px 8% 28px;
 }
 
-footer ul {
+#listaIconosFooter {
     justify-content: flex-end;
 }
 
-footer ul li {
+#listaIconosFooter li {
     margin: 0 8px;
 }
 
 footer ul :nth-child(3) {
     margin-right: 0;
+}
+
+#listaDatosContacto {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+.elementosDatosContacto {
+    flex-basis: 33%;
+    margin: 27px 0;
+}
+
+#elementoDireccion {
+    text-align: center;
+}
+
+#elementoCiudad {
+    text-align: right;
+}
+
+footer::before,
+#textoFooter::after {
+    width: 100px;
+}
+
+#seguinos {
+    margin-bottom: 0.5em;
 }
 
 /*
@@ -741,7 +759,8 @@ footer ul {
 /* 1024 */
 
 @media (min-width: 1024px) {
-    main {
+    main,
+    footer {
         max-width: 1200px;
         margin: 0 auto;
     }
@@ -771,6 +790,18 @@ footer ul {
 
     #renderizamos {
         margin: 15px 0;
+    }
+
+    /* footer */
+
+    footer {
+        padding: 32px 91px 28px;
+    }
+
+    footer::before,
+    #textoFooter::after {
+        width: 157px;
+        height: 8px;
     }
 
 }
