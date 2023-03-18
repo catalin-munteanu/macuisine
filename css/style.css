@@ -136,6 +136,11 @@ header {
     justify-content: space-between;
 }
 
+header article ul li a img,
+header img {
+    display: block;
+}
+
 #imagenLogo {
     width: 103px;
 }
@@ -152,16 +157,13 @@ header {
     margin: 0 2px;
 }
 
-#botonMenu {
+#burger-menu-toggler {
     margin-left: 19px;
+    z-index: 3;
 }
 
-nav {
+#mainMenu {
     display: none;
-}
-
-nav ul {
-    display: flex;
 }
 
 /* títulos */
@@ -436,6 +438,26 @@ body.burger-menu-active .open {
 
 body.burger-menu-active .close {
     display: block;
+}
+
+body.burger-menu-active #mainMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    z-index: 2;
+    background-color: rgba(255,253,253,0.80);
+}
+
+body.burger-menu-active .itemsNav {
+    color: white;
 }
 
 /***/
