@@ -130,10 +130,15 @@ html {
 
 header {
     width: 100vw;
+    height: 100px;
     padding: 19px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #FFFDFD;
 }
 
 header article ul li a img,
@@ -491,23 +496,21 @@ body.burger-menu-active .itemsNav {
     header {
         padding: 34px;
         margin-bottom: 47px;
+        height: 137px;
     }
 
-    #botonMenu {
+    #burger-menu-toggler {
         display: none;
     }
 
-    nav {
+    #mainMenu {
         display: flex;
         align-items: center;
-    }
-
-    nav ul li {
-        padding: 8px;
-    }
-
-    nav {
         padding-left: 20px;
+    }
+
+    #mainMenu li {
+        padding: 8px;
     }
     
     #imagenLogo {
