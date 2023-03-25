@@ -287,8 +287,24 @@ h2#newPosts {
 /* sección 4 VIDEO HERRAJES */
 
 #seccionVideoHerrajes {
-    padding: 0 7.5%;
     position: relative;
+}
+
+#seccionVideoHerrajes h5 {
+    padding: 25px 7.5% 0;
+}
+
+#seccionVideoHerrajes h3 {
+    padding: 0 7.5% 25px;
+}
+
+#seccionVideoHerrajes p {
+    padding: 25px 7.5%;
+}
+
+#videoHerrajes {
+    width: 100vw;
+    max-width: 100vw;
 }
 
 /* sección 5 CONTACTO */
@@ -644,6 +660,10 @@ body.burger-menu-active .itemsNav {
 
     #seccionVideoHerrajes p {
         font-size: 16px;
+    }
+
+    #videoHerrajes {
+        padding: 0 4.82%;
     }
 
 /* SECCIÓN CONTACTO */
