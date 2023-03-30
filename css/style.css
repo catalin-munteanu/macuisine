@@ -141,7 +141,6 @@ header {
     background-color: #FFFDFD;
 }
 
-header article ul li a img,
 header img {
     display: block;
 }
@@ -654,6 +653,7 @@ body.burger-menu-active .itemsNav {
     #fotoVestidores {
         max-width: 100%;
         padding-left: 33%;
+        margin-bottom: 0;
     }
     
     #fotoComentarios {
@@ -663,7 +663,7 @@ body.burger-menu-active .itemsNav {
     }
     
     #textoComentarios {
-        position: relative;
+        position: absolute;
         z-index: 1;
         margin: 0;
         padding: 24px;
@@ -678,6 +678,10 @@ body.burger-menu-active .itemsNav {
 
     #textoComentarios h5 {
         font-size: 16px;
+    }
+
+    #textoComentarios p {
+        font-size: 15px;
     }
 
 /* sección 4 VIDEO HERRAJES */
@@ -715,10 +719,11 @@ body.burger-menu-active .itemsNav {
 
 #textoEscribinos h2 {
     font-size: 32px;
+    line-height: 1.2em;
 }
 
-#textoEscribinos h2 {
-    line-height: 1.2em;
+#textoEscribinos p {
+    font-size: 15px;
 }
 
 #fotoContacto {
@@ -843,7 +848,6 @@ footer ul {
 @media (min-width: 1024px) {
     main,
     footer {
-        max-width: 1200px;
         margin: 0 auto;
     }
 
@@ -853,8 +857,20 @@ footer ul {
         margin-bottom: 0;
     }
 
+    .itemsRedesHeader a img {
+        width: 50px;
+    }
+
     #imagenLogo {
         width: 180px;
+    }
+
+    .itemsNav a {
+        font-size: 20px;
+    }
+
+    #mainMenu {
+        padding-left: 34px;
     }
 
     /* sección mobiliarios cocina */
@@ -906,5 +922,13 @@ footer ul {
     header {
         height: 234px;
         padding: 54px 63px;
+    }
+
+    .itemsRedesHeader a img {
+        width: 59px;
+    }
+
+    .itemsNav a {
+        font-size: 24px;
     }
 }
