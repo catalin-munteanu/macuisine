@@ -912,6 +912,8 @@ footer ul {
         height: 8px;
     }
 
+
+
 }
 
 @media (min-width: 1200px) {
@@ -930,5 +932,25 @@ footer ul {
 
     .itemsNav a {
         font-size: 24px;
+    }
+
+    /* footer */
+
+    footer {
+        padding: 32px 91px 36px;
+    }
+
+    .elementosDatosContacto {
+        font-size: 20px;
+    }
+
+    #seguinos {
+        font-size: 24px;
+    }
+
+    .elementosListaFooter,
+    .iconosFooter,
+    .iconosFooter img {
+        width: 95px;
     }
 }
