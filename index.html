@@ -34,10 +34,19 @@
                         class="linksRedesHeader"><img src="img\mobile\icono-facebook.svg"></a></li>
             </ul>
 
-            <button id="burger-menu-toggler">
-                <img class="open" src="img\mobile\burger-menu.svg">
-                <img class="close" src="img\mobile\icono-facebook.svg">
-            </button>
+            <div class="hamburger">
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
+            </div>
+            <nav class="menuppal">
+                <ul>
+                  <li><a href="#">Opcion 1</a></li>
+                  <li><a href="#">Opcion 2</a></li>
+                  <li><a href="#">Opcion 3</a></li>
+                  <li><a href="#">Opcion 4</a></li>
+                </ul>
+            </nav>
 
             <ul id="mainMenu">
                 <li class="itemsNav"><a href="#seccionMobiliarios"
@@ -57,7 +66,8 @@
     <main>
 
         <section id="seccionMobiliarios" class="fondoBlanco">
-            <img src="img\desktop\img-01-d.png" alt="MOBILIARIOS COCINA" class="fotos" id="fotoMobiliarios">
+            <img src="img\mobile\imagen-01.png" alt="MOBILIARIOS COCINA" class="fotos" id="fotoMobiliariosMobile">
+            <img src="img\desktop\img-01-d.png" alt="MOBILIARIOS COCINA" class="fotos" id="fotoMobiliariosDesktop">
             <article class="fondoNegro" id="textoMobiliarios">
                 <h3 class="weight500">MOBILIARIOS<br><strong class="weight700 textoNaranja">COCINA</strong></h3>
                 <h5 class="size8 weight400" id="renderizamos">RENDERIZAMOS TU PROYECTO</h5>
@@ -105,7 +115,8 @@
 
             <figure id="mobiliariosVestidores">
 
-                <img src="img\desktop\img-02-d.png" alt="MOBILIARIOS VESTIDORES" class="fotos" id="fotoVestidores">
+                <img src="img\mobile\imagen-02.png" alt="MOBILIARIOS VESTIDORES" class="fotos" id="fotoVestidoresMobile">
+                <img src="img\desktop\img-02-d.png" alt="MOBILIARIOS VESTIDORES" class="fotos" id="fotoVestidoresDesktop">
 
                 <figcaption class="fondoGris" id="textoVestidores">
                     <h3 class="size26 weight500">MOBILIARIOS<br><strong
@@ -120,7 +131,39 @@
             </figure>
 
             <figure id="containerComentarios">
-                <img src="img\desktop\img-03-d.png" alt="COMENTARIOS" class="fotos" id="fotoComentarios">
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="img\mobile\COCINA 01.png" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="img\mobile\COCINA 02.png" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="img\mobile\COCINA 03.png" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+                  
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+                  
+                  <!-- The dots/circles -->
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>
 
                 <figcaption class="fondoNegro" id="textoComentarios">
                     <h3 class="weight700 size24">RENDERIZAMOS<br><strong class="textoNaranja weight700 size24">TU
@@ -148,7 +191,8 @@
 
             <figure id="holaEscribinos">
 
-                <img src="img\desktop\img-04-d.png" alt="CONTACTO" class="fotos" id="fotoContacto">
+                <img src="img\mobile\imagen-04.png" alt="CONTACTO" class="fotos" id="fotoContactoMobile">
+                <img src="img\desktop\img-04-d.png" alt="CONTACTO" class="fotos" id="fotoContactoDesktop">
 
                 <figcaption class="fondoGris" id="textoEscribinos">
                     <h2 class="weight400 size24" id="hola">HOLA<br><strong class="weight700">ESCRIBINOS</strong></h2>

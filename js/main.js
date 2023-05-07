@@ -1,51 +1,54 @@
-document.addEventListener('DOMContentLoaded', function() {
-
-    const burgerMenuBtn = document.querySelector('#burger-menu-toggler');
-    const menuItems = document.querySelectorAll('.menuItems');
-    
-    function navResponsive() {
-    
-        burgerMenuBtn.addEventListener( 'click', function() {
-            document.body.classList.toggle('burger-menu-active');
-    
-            });
-    
-        menuItems.forEach(function(menuItem) {
-            menuItem.addEventListener('click', function () {
-                document.body.classList.remove('burger-menu-active');
-                let currentItem = document.querySelector('.active');
-                currentItem.classList.remove('active');
-                this.classList.add('active');
-            })
-        });
+// Scrolled Page class
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 0) {
+        document.body.classList.add('page-scrolled');
+    } else {
+        document.body.classList.remove('page-scrolled');
     }
-    
-    navResponsive();
-    
-    } )
-    
-    let pathname = window.location.pathname;
-    
-    switch (pathname) {
-        case "/index.html":
-            document.querySelector("#home").classList.add('active');
-        break;
-        case "/bio.html":
-        document.querySelector("#about").classList.add('active');
-        break;
-        case "/contacto.html":
-            document.querySelector("#projects").classList.add('active');
-        break;
-        case "/musica.html":
-        document.querySelector("#contact").classList.add('active');
-        break;
-        case "/participaciones.html":
-            document.querySelector("#contact").classList.add('active');
-            break;
-        case "/videos.html":
-            document.querySelector("#contact").classList.add('active');
-        break;
-        case "/vivo.html":
-            document.querySelector("#contact").classList.add('active');
-        break;        
-    } 
+});
+
+// SLIDER
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+// BURGER MENU
+
+// selector
+var menu = document.querySelector('.hamburger');
+
+// method
+function toggleMenu (event) {
+  this.classList.toggle('is-active');
+  document.querySelector( ".menuppal" ).classList.toggle("is_active");
+  event.preventDefault();
+}
+
+// event
+menu.addEventListener('click', toggleMenu, false);
