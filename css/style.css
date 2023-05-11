@@ -296,7 +296,7 @@ h2#newPosts {
 #fotoVestidoresMobile {
     display: block;
     max-width: 100%;
-    margin-bottom: 120px;
+    margin-bottom: 60%;
 }
 
 #textoVestidores {
@@ -338,7 +338,7 @@ h2#newPosts {
     padding: 18px 25px 25px;
     min-width: 230px;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 #textoComentarios h3 {
@@ -435,6 +435,7 @@ h2#newPosts {
 
 #seccionVideoHerrajes {
     position: relative;
+    margin-bottom: 10%;
 }
 
 #seccionVideoHerrajes h5 {
@@ -449,8 +450,19 @@ h2#newPosts {
     padding: 25px 7.5%;
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    width: 100%
+}
+
 #videoHerrajes {
-    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     max-width: 100vw;
 }
 
@@ -650,11 +662,14 @@ body.burger-menu-active .itemsNav {
     #seccionMobiliarios{
         margin-bottom: 30%;
     }
+    #fotoVestidoresMobile {
+        margin-bottom: 50%;
+    }
 }
 
 @media (min-width: 390px) {
-    #fotoVestidores {
-        margin-bottom: 90px;
+    #fotoVestidoresMobile {
+        margin-bottom: 47%;
     }
 }
 
@@ -668,18 +683,26 @@ body.burger-menu-active .itemsNav {
     #textoVestidores {
         top: 90%;
     }
+    #fotoVestidoresMobile {
+        margin-bottom: 42%;
+    }
 }
 
 @media (min-width: 520px) {
     #textoMobiliarios {
         bottom: -17%;
     }
+
     #seccionMobiliarios{
         margin-bottom: 20.5%;
     }
 
     #textoVestidores {
         top: 92%;
+    }
+
+    #fotoVestidoresMobile {
+        margin-bottom: 35%;
     }
 }
 
@@ -689,6 +712,10 @@ body.burger-menu-active .itemsNav {
     }
     #seccionMobiliarios{
         margin-bottom: 15%;
+    }
+
+    #fotoVestidoresMobile {
+        margin-bottom: 25%;
     }
 }
 
