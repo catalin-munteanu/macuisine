@@ -224,7 +224,7 @@ section#instagramPosts {
 #seccionMobiliarios{
     position: relative;
     margin-bottom: 36%;
-/*  margin-bottom: 130px;*/
+    scroll-margin-top: 100px;
 }
 
 #fotoMobiliariosDesktop {
@@ -284,6 +284,9 @@ h2#newPosts {
 
 /* sección 3 VESTIDORES y RENDERS */
 
+#mobiliariosVestidoresComentarios {
+    scroll-margin-top: 100px;
+}
 
 #mobiliariosVestidores {
     position: relative;
@@ -327,6 +330,10 @@ h2#newPosts {
     top: 110px;
     max-width: 100%;
     margin-bottom: 30px;
+}
+
+#sub-section-renders {
+    scroll-margin-top: 100px;
 }
 
 .slider-renders {
@@ -467,6 +474,10 @@ h2#newPosts {
 }
 
 /* sección 5 CONTACTO */
+
+#seccionContacto {
+    scroll-margin-top: 100px;
+}
 
 #holaEscribinos {
     position: relative;
@@ -1130,6 +1141,10 @@ footer ul {
 
     footer {
         padding: 32px 91px 28px;
+    }
+
+    #listaIconosFooter {
+        margin-bottom: 20px;
     }
 
     footer::before,
