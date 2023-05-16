@@ -565,6 +565,9 @@ textarea {
 
 textarea {
     height: 126px;
+    color: #3D3845;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 /* footer */
@@ -832,6 +835,13 @@ body.burger-menu-active .itemsNav {
     h2#newPosts {
         font-size: 42px;
         margin: 37px 0;
+    }
+
+    #containerPosteos figure a figcaption h4,
+    #containerPosteos figure a figcaption p,
+    #containerPosteos figure figcaption h4 a,
+    #containerPosteos figure figcaption p a{
+        font-weight: 500;
     }
 
     /* sección vestidores y renders */
