@@ -227,9 +227,9 @@ section#instagramPosts {
     scroll-margin-top: 100px;
 }
 
-#fotoMobiliariosDesktop {
+/* #fotoMobiliariosDesktop {
     display: none;
-}
+} */
 
 #fotoMobiliariosMobile {
     display: block;
@@ -292,7 +292,7 @@ h2#newPosts {
     position: relative;
 }
 
-#fotoVestidoresDesktop {
+/* #fotoVestidoresDesktop {
     display: none;
 }
 
@@ -300,7 +300,7 @@ h2#newPosts {
     display: block;
     max-width: 100%;
     margin-bottom: 60%;
-}
+} */
 
 #textoVestidores {
     position: absolute;
@@ -365,6 +365,12 @@ h2#newPosts {
   }
   
   /* Next & previous buttons */
+
+  button.prev,
+  button.next {
+    background-color: transparent;
+  }
+
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -493,9 +499,9 @@ h2#newPosts {
     min-width: 194px;
 }
 
-#fotoContactoDesktop {
+/* #fotoContactoDesktop {
     display: none;
-}
+} */
 
 #fotoContactoMobile {
     display: block;
@@ -772,12 +778,12 @@ body.burger-menu-active .itemsNav {
 
     /* sección mobiliarios cocina */
 
-    #fotoMobiliariosMobile {
+    /* #fotoMobiliariosMobile {
         display: none;
-    }
+    } */
 
     #fotoMobiliariosDesktop {
-        display: block;
+        /* display: block; */
         padding-right: 32%;
     }
 
@@ -870,12 +876,12 @@ body.burger-menu-active .itemsNav {
         font-size: 15px;
     }
 
-    #fotoVestidoresMobile {
+    /* #fotoVestidoresMobile {
         display: none;
-    }
+    } */
     
     #fotoVestidoresDesktop {
-        display: block;
+        /* display: block; */
         max-width: 100%;
         padding-left: 33%;
         margin-bottom: 0;

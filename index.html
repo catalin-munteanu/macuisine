@@ -61,10 +61,15 @@
     <main>
 
         <section id="seccionMobiliarios" class="fondoBlanco">
-            <img src="img\mobile\imagen-01.png" alt="Foto ilustrativa de mobiliario para cocina" class="fotos"
+            <picture>
+                <source media="(min-width:768px)" srcset="img\desktop\img-01-d.webp">
+                <img id="fotoMobiliariosDesktop" src="img\mobile\imagen-01.webp"
+                    alt="Foto ilustrativa de mobiliario para cocina" style="width:auto;">
+            </picture>
+            <!--<img src="img\mobile\imagen-01.webp" alt="Foto ilustrativa de mobiliario para cocina" class="fotos"
                 id="fotoMobiliariosMobile">
-            <img src="img\desktop\img-01-d.png" alt="Foto ilustrativa de mobiliario para cocina" class="fotos"
-                id="fotoMobiliariosDesktop">
+            <img src="img\desktop\img-01-d.webp" alt="Foto ilustrativa de mobiliario para cocina" class="fotos"
+                id="fotoMobiliariosDesktop">-->
             <article class="fondoNegro" id="textoMobiliarios">
                 <h3 class="weight500">MOBILIARIOS<br><strong class="weight700 textoNaranja">COCINA</strong></h3>
                 <h5 class="size8 weight400" id="renderizamos">RENDERIZAMOS TU PROYECTO</h5>
@@ -82,7 +87,7 @@
 
                 <figure>
                     <a href="https://www.instagram.com/macuisine_muebles/" target="_blank">
-                        <img src="img/mobile/img-post-ig-01.png" alt="Foto ilustrativa de mobiliario apto para tele">
+                        <img src="img/mobile/img-post-ig-01.webp" alt="Foto ilustrativa de mobiliario apto para tele">
                         <figcaption>
                             <h4 class="textoGrisOscuro weight400">DORMITORIO</h4>
                             <p class="textoGrisClaro">Mobiliario de dormitorio<br>apto para tele</p>
@@ -92,7 +97,7 @@
 
                 <figure>
                     <a href="https://www.instagram.com/macuisine_muebles/" target="_blank">
-                        <img src="img/mobile/img-post-ig-02.png" alt="Foto ilustrativa de detalles en el mobiliario">
+                        <img src="img/mobile/img-post-ig-02.webp" alt="Foto ilustrativa de detalles en el mobiliario">
                         <figcaption>
                             <h4 class="textoGrisOscuro weight400">COMBINACIÓN</h4>
                             <p class="textoGrisClaro">Nos gusta estar en<br>cada detalle</p>
@@ -119,10 +124,16 @@
 
             <figure id="mobiliariosVestidores">
 
-                <img src="img\mobile\imagen-02.png" alt="Foto detalle de vestidores" class="fotos"
+                <picture>
+                    <source media="(min-width:768px)" srcset="img\desktop\img-02-d.webp">
+                    <img id="fotoVestidoresDesktop" src="img\mobile\imagen-02.webp"
+                        alt="Foto detalle de vestidores" style="width:auto;">
+                </picture>
+
+                <!--<img src="img\mobile\imagen-02.webp" alt="Foto detalle de vestidores" class="fotos"
                     id="fotoVestidoresMobile">
-                <img src="img\desktop\img-02-d.png" alt="Foto detalle de vestidores" class="fotos"
-                    id="fotoVestidoresDesktop">
+                <img src="img\desktop\img-02-d.webp" alt="Foto detalle de vestidores" class="fotos"
+                    id="fotoVestidoresDesktop">-->
 
                 <figcaption class="fondoGris" id="textoVestidores">
                     <h3 class="size26 weight500">MOBILIARIOS<br><strong
@@ -169,8 +180,8 @@
                     </div>
 
                     <!-- Botones anterior - siguiente -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1)">&#10095;</button>
                 </article>
 
                 <!-- Puntos indicadores -->
@@ -207,8 +218,14 @@
 
             <figure id="holaEscribinos">
 
-                <img src="img\mobile\imagen-04.png" alt="CONTACTO" class="fotos" id="fotoContactoMobile">
-                <img src="img\desktop\img-04-d.png" alt="CONTACTO" class="fotos" id="fotoContactoDesktop">
+                <picture>
+                    <source media="(min-width:768px)" srcset="img\desktop\img-04-d.webp">
+                    <img id="fotoContactoDesktop" src="img\mobile\imagen-04.webp"
+                        alt="Foto detalle de vestidores" style="width:auto;">
+                </picture>
+
+                <!--<img src="img\mobile\imagen-04.webp" alt="CONTACTO" class="fotos" id="fotoContactoMobile">
+                <img src="img\desktop\img-04-d.webp" alt="CONTACTO" class="fotos" id="fotoContactoDesktop">-->
 
                 <figcaption class="fondoGris" id="textoEscribinos">
                     <h2 class="weight400 size24" id="hola">HOLA<br><strong class="weight700">ESCRIBINOS</strong></h2>
