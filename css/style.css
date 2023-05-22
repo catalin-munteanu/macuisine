@@ -292,15 +292,11 @@ h2#newPosts {
     position: relative;
 }
 
-/* #fotoVestidoresDesktop {
-    display: none;
-}
-
-#fotoVestidoresMobile {
+#fotoVestidoresDesktop {
     display: block;
     max-width: 100%;
-    margin-bottom: 60%;
-} */
+    margin-bottom: 65%;
+}
 
 #textoVestidores {
     position: absolute;
@@ -682,13 +678,13 @@ body.burger-menu-active .itemsNav {
     #seccionMobiliarios{
         margin-bottom: 30%;
     }
-    #fotoVestidoresMobile {
+    #fotoVestidoresDesktop {
         margin-bottom: 50%;
     }
 }
 
 @media (min-width: 390px) {
-    #fotoVestidoresMobile {
+    #fotoVestidoresDesktop {
         margin-bottom: 47%;
     }
 }
@@ -703,7 +699,7 @@ body.burger-menu-active .itemsNav {
     #textoVestidores {
         top: 90%;
     }
-    #fotoVestidoresMobile {
+    #fotoVestidoresDesktop {
         margin-bottom: 42%;
     }
 }
@@ -721,7 +717,7 @@ body.burger-menu-active .itemsNav {
         top: 92%;
     }
 
-    #fotoVestidoresMobile {
+    #fotoVestidoresDesktop {
         margin-bottom: 35%;
     }
 }
@@ -734,7 +730,7 @@ body.burger-menu-active .itemsNav {
         margin-bottom: 15%;
     }
 
-    #fotoVestidoresMobile {
+    #fotoVestidoresDesktop {
         margin-bottom: 25%;
     }
 }
