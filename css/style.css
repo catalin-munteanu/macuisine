@@ -526,6 +526,7 @@ form {
     width: 149px;
     font-weight: 400;
     font-size: 20px;
+    cursor: pointer;
 }
 
 input#formNombre {
