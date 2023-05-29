@@ -247,9 +247,9 @@ if (
             <?php
             if (isset($success)) {
                 if ($success) {
-                    echo '<br><h2 style="text-align: center;margin: 50px auto 30px;">Gracias, hemos recibido tu consulta, en breve te estaremos contactando</h2>';
+                    echo '<article class="fondoNegro"> <h2 style="text-align: center;margin: 50px auto 30px;">Gracias, hemos recibido tu consulta, en breve te estaremos contactando</h2></article>';
                 } else {
-                    echo '<br><h2 style="text-align: center;margin: 50px auto 30px;">Parece que ha habido un error. Vuelve a intentarlo más tarde</h2>';
+                    echo '<article class="fondoNegro"> <h2 style="text-align: center;margin: 50px auto 30px;">Parece que ha habido un error. Vuelve a intentarlo más tarde</h2></article>';
                 }
             } else {
             ?>

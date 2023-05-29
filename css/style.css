@@ -529,14 +529,14 @@ form {
     cursor: pointer;
 }
 
-input#formNombre {
+input#nombre {
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     color: #3D3845;
 }
 
-input#formEmail {
+input#mail {
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -987,12 +987,12 @@ form {
     display: flex;
 }
 
-#formEmail {
+#mail {
     margin-top: 0;
     margin-left: 11.5px;
 }
 
-#formNombre {
+#nombre {
     margin-right: 11.5px;
 }
 
