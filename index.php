@@ -254,14 +254,15 @@ if (
             } else {
             ?>
 
-                <form action="#seccionContacto" method="post" class="fondoNegro" id="form">
+                <form action="#seccionContacto" method="POST" class="fondoNegro" id="form">
                     <article id="containerNombreEmail">
-                        <input type="text" name="nombre" id="formNombre" placeholder="Nombre" aria-label="Nombre" required>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" aria-label="Nombre" required>
                         <br>
-                        <input type="email" name="email" id="formEmail" placeholder="email@gmail.com" aria-label="Email" required>
+                        <input type="email" name="mail" id="mail" placeholder="email@gmail.com" aria-label="Email" required>
                         <br>
+
                     </article>
-                    <textarea name="mensaje" id="formMensaje" maxlength="3000" aria-label="Mensaje" required></textarea>
+                    <textarea name="consulta" id="consulta" maxlength="3000" aria-label="Mensaje" required></textarea>
                     <article id="containerAclaracionesBoton">
                         <input type="submit" value="ENVIAR" aria-label="Enviar" id="botonContacto">
                         <p class="size12" id="aclaracionesForm">Dejanos tu consulta y nos comunicaremos con vos.<br>
