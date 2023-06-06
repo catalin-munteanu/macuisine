@@ -478,7 +478,8 @@ h2#newPosts {
 /* sección 5 CONTACTO */
 
 #seccionContacto {
-    scroll-margin-top: 100px;
+    scroll-margin-top: -150px;
+    background-color: #FFFDFD;
 }
 
 #holaEscribinos {
@@ -495,14 +496,8 @@ h2#newPosts {
     min-width: 194px;
 }
 
-/* #fotoContactoDesktop {
-    display: none;
-} */
-
-#fotoContactoMobile {
-    display: block;
-    max-width: 100%;
-    position: relative;
+#fotoContactoDesktop {
+    width: 100%;
 }
 
 #hola {
@@ -561,7 +556,7 @@ textarea {
     padding: 12px;
 }
 
-#formEmail,
+#mail,
 textarea {
     margin-top: 23px;
 }
@@ -1148,6 +1143,12 @@ footer ul {
 
     #textoRenders {
         top: 10%;
+    }
+
+    /* CONTACTO */
+
+    #seccionContacto {
+        scroll-margin-top: -400px;
     }
 
     /* footer */

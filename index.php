@@ -231,7 +231,7 @@ if (
 
                 <picture>
                     <source media="(min-width:768px)" srcset="img\desktop\img-04-d.webp">
-                    <img id="fotoContactoDesktop" src="img\mobile\imagen-04.webp" alt="Foto detalle de vestidores" style="width:auto;">
+                    <img id="fotoContactoDesktop" src="img\mobile\imagen-04.webp" alt="Foto detalle de vestidores">
                 </picture>
 
                 <!--<img src="img\mobile\imagen-04.webp" alt="CONTACTO" class="fotos" id="fotoContactoMobile">
@@ -247,9 +247,9 @@ if (
             <?php
             if (isset($success)) {
                 if ($success) {
-                    echo '<h2 style="text-align: center;margin: 50px auto 30px;color: #575756;">Gracias, hemos recibido tu consulta. En breve te estaremos contactando.</h2></article>';
+                    echo '<h2 style="text-align: center;margin: 50px auto 30px;color: #575756;padding: 0 1em;">Gracias, hemos recibido tu consulta. En breve te estaremos contactando.</h2></article>';
                 } else {
-                    echo '<h2 style="text-align: center;margin: 50px auto 30px;color: #575756;">Parece que ha habido un error. Vuelva a intentarlo más tarde.</h2></article>';
+                    echo '<h2 style="text-align: center;margin: 50px auto 30px;color: #575756;padding: 0 1em;">Parece que ha habido un error. Vuelva a intentarlo más tarde.</h2></article>';
                 }
             } else {
             ?>
