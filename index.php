@@ -1,32 +1,32 @@
 <?php
 if (
-	isset($_POST['mail'])
-	&& (isset($_POST['nombre']))
-	&& (isset($_POST['consulta']))
+    isset($_POST['mail'])
+    && (isset($_POST['nombre']))
+    && (isset($_POST['consulta']))
 ) {
-	$success = false;
+    $success = false;
 
-	if (
-		!empty(strip_tags($_POST['mail'])) &&
-		!empty(strip_tags($_POST['nombre'])) &&
-		!empty(strip_tags($_POST['consulta']))
-	) {
-		$to      = 'info@ma-cuisine.com.ar';
-		$subject = 'Mensaje dejado en Formulario de Contacto';
-		$message = 'Recibiste un mensaje en tu sitio web con la siguiente informaci&oacute;n:<br>
+    if (
+        !empty(strip_tags($_POST['mail'])) &&
+        !empty(strip_tags($_POST['nombre'])) &&
+        !empty(strip_tags($_POST['consulta']))
+    ) {
+        $to      = 'info@ma-cuisine.com.ar';
+        $subject = 'Mensaje dejado en Formulario de Contacto';
+        $message = 'Recibiste un mensaje en tu sitio web con la siguiente informaci&oacute;n:<br>
 		Nombre: ' . strip_tags($_POST['nombre']) . '<br>
 		Consulta: ' . strip_tags($_POST['consulta']) . '<br>
 		Mail: ' . strip_tags($_POST['mail']) . '<br>
 		IP: ' . $_SERVER['REMOTE_ADDR'];
 
-		$headers  = "MIME-Version: 1.0" . "\r\n";
-		$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-		$headers .= "From: <noreply@macuisine.com>" . "\r\n";
+        $headers  = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+        $headers .= "From: <noreply@macuisine.com>" . "\r\n";
 
-		if (mail($to, $subject, $message, $headers)) {
-			$success = true;
-		}
-	}
+        if (mail($to, $subject, $message, $headers)) {
+            $success = true;
+        }
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -108,32 +108,33 @@ if (
             <article id="containerPosteos">
 
                 <figure>
-                    <a href="https://www.instagram.com/macuisine_muebles/" target="_blank">
-                        <img src="img/mobile/img-post-ig-01.webp" alt="Foto ilustrativa de mobiliario apto para tele" loading="lazy">
+                    <a href="https://www.instagram.com/p/Cv0D6YaLp31/?img_index=1" target="_blank">
+                        <img src="img/mobile/img-post-ig-01.webp" alt="Foto ilustrativa de Mobiliario Premium" loading="lazy">
                         <figcaption>
-                            <h4 class="textoGrisOscuro weight400">DORMITORIO</h4>
-                            <p class="textoGrisClaro">Mobiliario de dormitorio<br>apto para tele</p>
+                            <h4 class="textoGrisOscuro weight400">COCINA</h4>
+                            <p class="textoGrisClaro">Mobiliario Premium</p>
                         </figcaption>
                     </a>
                 </figure>
 
                 <figure>
-                    <a href="https://www.instagram.com/macuisine_muebles/" target="_blank">
-                        <img src="img/mobile/img-post-ig-02.webp" alt="Foto ilustrativa de detalles en el mobiliario" loading="lazy">
+                    <a href="https://www.instagram.com/p/Cv7Qd8qs1CN/" target="_blank">
+                        <img src="img/mobile/img-post-ig-02.webp" alt="Foto ilustrativa de Tablero Gloss" loading="lazy">
                         <figcaption>
-                            <h4 class="textoGrisOscuro weight400">COMBINACIÓN</h4>
-                            <p class="textoGrisClaro">Nos gusta estar en<br>cada detalle</p>
+                            <h4 class="textoGrisOscuro weight400">MATERIALES</h4>
+                            <p class="textoGrisClaro">Tablero Gloss Premium</p>
                         </figcaption>
                     </a>
                 </figure>
 
                 <figure>
-                    <a href="mailto:info@ma-cuisine.com.ar"><img src="img/mobile/img-post-ig-03.webp" alt="Foto ilustraiva de sillas para el hogar" loading="lazy"></a>
-                    <figcaption>
-                        <h4 class="textoGrisOscuro weight400"><a class="textoGrisOscuro weight400" href="mailto:info@ma-cuisine.com.ar">TE GUSTA?</a></h4>
-                        <p class="textoGrisClaro"><a class="textoGrisClaro" href="mailto:info@ma-cuisine.com.ar">Hacé de
-                                tu hogar<br>un espacio único</a></p>
-                    </figcaption>
+                    <a href="https://www.instagram.com/p/CwP21lQp3g0/?img_index=1" target="_blank">
+                        <img src="img/mobile/img-post-ig-03.webp" alt="Foto ilustrativa de Mobiliario de confort" loading="lazy">
+                        <figcaption>
+                            <h4 class="textoGrisOscuro weight400">ISLA</h4>
+                            <p class="textoGrisClaro">Mobiliario de confort</p>
+                        </figcaption>
+                    </a>
                 </figure>
 
             </article>
